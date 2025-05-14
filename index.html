@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>aula 03</title>
+</head>
+
+<style>
+    .texto {
+        background-color: tomato;
+        color: aliceblue;
+        font-size: 30px
+    }
+</style>
+
+<body>
+    <h1> Aula de js </h1>
+    <p class=" texto" id="textopersonalizado">Aqui vai meu texto personalizado</p>
+
+    <script>
+        console.log('aqui eu tenho um texto legal !!!!!!')
+        // operadore aritimeticos 
+        // + soma 
+        // - subtrai 
+        // * multiplica 
+        // / divide 
+
+        console.log(1 + 1)
+        //operadores logicos 
+        // = igual
+        // != diferente
+        // > maior
+        // < menor
+        // >= maior igual
+        // <= menor igual
+
+        console.log(1 === "1") // iguais para compara  
+        console.log(1 !== "1") // compara algo diferente 
+        console.log('numero,texto,numeroQuebrado,verdadeiroFalso')  // mostar na tela o que digita no comando console.log
+        console.log(8 + parseInt("2"))  // converter a string em número
+
+        if (1 == 2) {
+            console.log('estou dentro do if') 
+        } else if (2 == 2) {
+
+            console.log('estou dentro do else if ')
+
+        } else {
+            console.log('estou dentro do else') //console.log serve para escrever informações,
+            
+        }
+
+        for (i = 0; i < 5; i++) {
+
+            console.log('valor de i:' + i) 
+
+        }
+        contador = 1
+        while (contador <= 10) {                      
+
+            contador++
+
+            if (contador == 2) {
+                continue
+            }
+            if (contador == 5) {
+            }
+            break
+            console.log('valor de contador:' + contador)
+        }
+
+        alert('deseja continuar?') //alert funçao - para criar uma funçao de alerta na pagina 
+        function funçaotop() {
+            alert('minha funçao funcionou!!!!!')
+
+            funcaotop()
+
+
+
+        }
+
+        function adicionartexto() {
+
+            alert('deja adicionar algum texto ?')
+
+            textolocal= document.getElementById('textopersonalizado').innerHTML  //é uma propriedade que permite acessar ou 
+            // modificar o conteúdo HTML de um elemento. 
+
+            console.log(textolocal)
+
+
+
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
